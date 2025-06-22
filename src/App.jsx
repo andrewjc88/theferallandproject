@@ -4,8 +4,7 @@ import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 
 export default function App() {
   // const url = window.location.href;
-  console.log(url);
-  console.log('site version 1.003')
+  console.log('site version 1.004')
 
   // const BASENAME = url.includes('localhost') ? '/' : "/theferallandproject";
 
