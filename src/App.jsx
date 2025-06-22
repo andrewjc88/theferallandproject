@@ -3,13 +3,13 @@ import tShirt from './assets/black-shirt.png';
 import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 
 export default function App() {
-  console.log('site version 1.005')
+  console.log('site version 1.006')
   
-  const BASENAME = window.location.href.includes('localhost') ? '/' : "/theferallandproject";
+  // const BASENAME = window.location.href.includes('localhost') ? '/' : "/theferallandproject";
 
   return (
-    <Router basename={BASENAME}>
-    {/* <Router > */}
+    // <Router basename={BASENAME}>
+    <Router > 
       <Routes>
         {/* update route */}
         <Route path="/" element={<OldHome/>} />
@@ -284,7 +284,10 @@ function Support() {
                   {'< '}Home
                 </a>
               </div>
-              <img className='absolute w-44 h-44 md:w-60 md:h-60 z-10 my-auto' src={tShirt} alt="The Feral Land Project T-Shirt in black" />
+
+              {/* T-Shirt */}
+              <img className='absolute h-44 md:h-80 z-10 mt-40' src={tShirt} alt="The Feral Land Project T-Shirt in black" />
+            
             </div>
 
             <div className='flex flex-col h-full justify-evenly w-full md:w-1/3'>
