@@ -3,9 +3,9 @@ import tShirt from './assets/black-shirt.png';
 import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 
 export default function App() {
-  const url = window.location.href;
+  // const url = window.location.href;
   console.log(url);
-  console.log('site version 1.002')
+  console.log('site version 1.003')
 
   // const BASENAME = url.includes('localhost') ? '/' : "/theferallandproject";
 
