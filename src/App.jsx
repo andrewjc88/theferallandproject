@@ -16,6 +16,7 @@ export default function App() {
 }
 
 function OldHome() {
+    console.log('site version 1.001')
     return (
       <div className='bg-white min-h-lvh font-'>
         <div className="flex flex-col mx-auto bg-white min-h-lvh max-w-full">
