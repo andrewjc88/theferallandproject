@@ -3,8 +3,13 @@ import tShirt from './assets/black-shirt.png';
 import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 
 export default function App() {
+  const url = window.location.href;
+  console.log(url);
+  
+  const BASENAME = url.includes('localhost') ? '' : "/theferallandproject";
+
   return (
-    <Router>
+    <Router basename={BASENAME}>
       <Routes>
         {/* update route */}
         <Route path="/" element={<OldHome/>} />
