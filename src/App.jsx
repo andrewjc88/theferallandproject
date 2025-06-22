@@ -6,10 +6,11 @@ export default function App() {
   const url = window.location.href;
   console.log(url);
   
-  const BASENAME = url.includes('localhost') ? '' : "/theferallandproject";
+  // const BASENAME = url.includes('localhost') ? '/' : "/theferallandproject";
 
   return (
-    <Router basename={BASENAME}>
+    // <Router basename={BASENAME}>
+    <Router >
       <Routes>
         {/* update route */}
         <Route path="/" element={<OldHome/>} />
