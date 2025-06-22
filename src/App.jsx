@@ -3,14 +3,13 @@ import tShirt from './assets/black-shirt.png';
 import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 
 export default function App() {
-  // const url = window.location.href;
-  console.log('site version 1.004')
-
-  // const BASENAME = url.includes('localhost') ? '/' : "/theferallandproject";
+  console.log('site version 1.005')
+  
+  const BASENAME = window.location.href.includes('localhost') ? '/' : "/theferallandproject";
 
   return (
-    // <Router basename={BASENAME}>
-    <Router >
+    <Router basename={BASENAME}>
+    {/* <Router > */}
       <Routes>
         {/* update route */}
         <Route path="/" element={<OldHome/>} />
@@ -279,10 +278,9 @@ function Support() {
 
           <div className='absolute flex flex-col  md:flex-row h-full z-10justify-end'>
 
-            <div className='w-full h-full hidden md:flex md:h-full md:w-2/3 flex-col '>
+            <div className='w-full h-full hidden md:flex md:h-full md:w-2/3 flex-col'>
               <div className='mt-20 tracking-wide ml-12 text-white font-fjalla text-6xl drop-shadow-[15px_15px_15px_#000]'>
-                <h1 className='pl-3 text-5xl'></h1>
-                <a href="/demo" class="px-3.5 py-3 text- font-thin text-white text-center shadow-xs focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">
+                <a href="/demo" class="px-3.5 py-3 font-thin text-white text-center shadow-xs focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">
                   {'< '}Home
                 </a>
               </div>
