@@ -5,7 +5,8 @@ import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 export default function App() {
   const url = window.location.href;
   console.log(url);
-  
+  console.log('site version 1.002')
+
   // const BASENAME = url.includes('localhost') ? '/' : "/theferallandproject";
 
   return (
@@ -22,7 +23,6 @@ export default function App() {
 }
 
 function OldHome() {
-    console.log('site version 1.001')
     return (
       <div className='bg-white min-h-lvh font-'>
         <div className="flex flex-col mx-auto bg-white min-h-lvh max-w-full">
