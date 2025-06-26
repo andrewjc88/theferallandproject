@@ -168,7 +168,7 @@ function Home() {
               <p className='flex md:text-xl text-black px-1 mt-24 md:mt-0 sm:px-10 md:px-0 md:pr-10 text-balance text-center md:text-right'>
                 The purpose of The&nbsp;Feral&nbsp;Land&nbsp;Project is to provide communities, institutions and wildlife with gardens, parks, green spaces, habitats and safe passageways. We strive to repurpose, steward or rewild feral lands, waste sites and over-paved places into hospitable environments where life&nbsp;will&nbsp;thrive.
               </p>
-              <Link path='/support' className="font-fjalla text-nowrap md:mr-10 mx-20 tracking-wide rounded-md bg-green-800 hover:bg-green-900 border-sh px-0 py-3 text-md font-semibold text-white text-center shadow-xs shadow-md focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">
+              <Link to='/support' className="font-fjalla text-nowrap md:mr-10 mx-20 tracking-wide rounded-md bg-green-800 hover:bg-green-900 border-sh px-0 py-3 text-md font-semibold text-white text-center shadow-xs shadow-md focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">
                 Support Our Mission!
               </Link>
             </div>
@@ -249,7 +249,7 @@ function Home() {
                 </div>
               </div>
 
-              <Link href="/support" className="font-fjalla md:ml-20 text-nowrap rounded-md bg-green-800 hover:bg-green-900 border-sh px-24 py-3 text-sm font-semibold text-white text-center shadow-xs shadow-md focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">
+              <Link to="/support" className="font-fjalla md:ml-20 text-nowrap rounded-md bg-green-800 hover:bg-green-900 border-sh px-24 py-3 text-sm font-semibold text-white text-center shadow-xs shadow-md focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">
                 Support Our Mission!
               </Link>
             </div>
@@ -277,11 +277,9 @@ function Support() {
 
             {/* Home link */}
             <div className='absolute text-2xl md:text-4xl mt-20 tracking-wide ml-12 text-white font-fjalla drop-shadow-[15px_15px_15px_#000]'>
-              <a 
-                href="/" 
-                class="ml-5 text-center shadow-xs focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">
+              <Link to="/" className="ml-5 text-center shadow-xs focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">
                 {'< '}Home
-              </a>
+              </Link>
             </div>
 
             <div className='w-full h-full hidden md:flex md:h-full md:w-2/3 flex-col '>
