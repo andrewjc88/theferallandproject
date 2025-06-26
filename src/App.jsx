@@ -1,15 +1,15 @@
 import logo from './assets/logo.png';
 import tShirt from './assets/black-shirt.png';
-import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
+import { HashRouter as Router, Routes, Route} from 'react-router-dom';
 
 export default function App() {
   console.log('site version 1.006')
   
-  const BASENAME = window.location.href.includes('localhost') ? '/' : "/theferallandproject";
+  // const BASENAME = window.location.href.includes('localhost') ? '/' : "/theferallandproject";
 
   return (
-    <Router basename={BASENAME}>
-    {/* <Router >  */}
+    // <Router basename={BASENAME}>
+     <Router >
       <Routes>
         {/* update route */}
         {/* <Route path="/" element={<OldHome/>} /> */}
@@ -251,14 +251,6 @@ function Home() {
               <a href="/support" class="font-fjalla md:ml-20 rounded-md bg-green-800 hover:bg-green-900 border-sh px-24 py-3 text-sm font-semibold text-white text-center shadow-xs shadow-md focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">
                 Support Our Mission!
               </a>
-
-              {/* <div className="">
-                <form action="https://www.paypal.com/donate" method="post" target="_top">
-                  <input type="hidden" name="hosted_button_id" value="Q3RAAD3KGJ4JC" />
-                  <input type="image" src="https://pics.paypal.com/00/s/Y2YzZWE0OWMtMGM0Yy00M2RhLWJkMGUtOGQyNThlYzA4Yzc4/file.PNG" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
-                  <img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
-                </form>
-              </div> */}
             </div>
 
             <h2 className="text-center text-md font-light mt-8">

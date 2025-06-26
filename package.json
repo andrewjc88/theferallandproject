@@ -2,7 +2,7 @@
   "name": "theferallandproject",
   "private": true,
   "version": "0.0.1",
-  "homepage": "https://www.theferallandproject.org/",
+  "homepage": "https://www.theferallandproject.org",
   "type": "module",
   "scripts": {
     "dev": "vite",
