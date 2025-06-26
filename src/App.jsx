@@ -1,6 +1,6 @@
 import logo from './assets/logo.png';
 import tShirt from './assets/black-shirt.png';
-import { HashRouter as Router, Routes, Route} from 'react-router-dom';
+import { HashRouter as Router, Routes, Route, Link} from 'react-router-dom';
 
 export default function App() {
   console.log('site version 1.006')
@@ -10,7 +10,7 @@ export default function App() {
 
   return (
     // <Router basename={BASENAME}>
-     <Router > 
+    <Router >
       <Routes>
         {/* update route */}
         {/* <Route path="/" element={<OldHome/>} /> */}
@@ -168,9 +168,9 @@ function Home() {
               <p className='flex md:text-xl text-black px-1 mt-24 md:mt-0 sm:px-10 md:px-0 md:pr-10 text-balance text-center md:text-right'>
                 The purpose of The&nbsp;Feral&nbsp;Land&nbsp;Project is to provide communities, institutions and wildlife with gardens, parks, green spaces, habitats and safe passageways. We strive to repurpose, steward or rewild feral lands, waste sites and over-paved places into hospitable environments where life&nbsp;will&nbsp;thrive.
               </p>
-              <a href="/support" class="font-fjalla text-nowrap md:mr-10 mx-20 tracking-wide rounded-md bg-green-800 hover:bg-green-900 border-sh px-0 py-3 text-md font-semibold text-white text-center shadow-xs shadow-md focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">
+              <Link path='/support' className="font-fjalla text-nowrap md:mr-10 mx-20 tracking-wide rounded-md bg-green-800 hover:bg-green-900 border-sh px-0 py-3 text-md font-semibold text-white text-center shadow-xs shadow-md focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">
                 Support Our Mission!
-              </a>
+              </Link>
             </div>
           </div>
           {/* bg image */}
@@ -249,9 +249,9 @@ function Home() {
                 </div>
               </div>
 
-              <a href="/support" class="font-fjalla md:ml-20 text-nowrap rounded-md bg-green-800 hover:bg-green-900 border-sh px-24 py-3 text-sm font-semibold text-white text-center shadow-xs shadow-md focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">
+              <Link href="/support" className="font-fjalla md:ml-20 text-nowrap rounded-md bg-green-800 hover:bg-green-900 border-sh px-24 py-3 text-sm font-semibold text-white text-center shadow-xs shadow-md focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">
                 Support Our Mission!
-              </a>
+              </Link>
             </div>
 
             <h2 className="text-center text-md font-light mt-8">
