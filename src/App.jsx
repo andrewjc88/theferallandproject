@@ -5,11 +5,11 @@ import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 export default function App() {
   console.log('site version 1.006')
   
-  // const BASENAME = window.location.href.includes('localhost') ? '/' : "/theferallandproject";
+  const BASENAME = window.location.href.includes('localhost') ? '/' : "/theferallandproject";
 
   return (
-    // <Router basename={BASENAME}>
-    <Router > 
+    <Router basename={BASENAME}>
+    {/* <Router >  */}
       <Routes>
         {/* update route */}
         {/* <Route path="/" element={<OldHome/>} /> */}
