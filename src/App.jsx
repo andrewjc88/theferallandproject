@@ -303,7 +303,7 @@ function Support() {
               <div className='flex flex-col md:mt-0 mt-12 m:my-auto w-[260px] mx-auto'> 
                 {/* Buy T-shirt button */}
                 <a className="rounded-md bg-green-800 hover:bg-green-900 px-3 py-3 text-lg font-bold text-white text-center shadow-xs focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
-                  href="https://theferallandproject.printful.me/mens-clothing">
+                  href="https://theferallandproject.printful.me/">
                   Shop T-Shirts!
                 </a>
                 
@@ -324,7 +324,7 @@ function Support() {
           </div>
 
           {/* bg image */}
-          <div className="blur-[1px] bg-cover min-h-[350px] md:max-h-[720px] md:min-h-[720px] md:clip-arrow-left bg-[url('./assets/background-7.jpg')] bg-no-repeat bg-center" />
+          <div className=" bg-cover brightness-125 min-h-[350px] md:max-h-[720px] md:min-h-[720px] md:clip-arrow-left bg-[url('./assets/background-7.jpg')] bg-no-repeat bg-center" />
         </div>
 
         {/* Second section */}
@@ -337,7 +337,7 @@ function Support() {
             </p>
             <div className="absolute bg-black w-full opacity-60 blur-xl z-[-1] rounded-full h-1/3 "/>
           </div>
-          <div className='flex clip-up blur-[1px] py-20 min-h-[250px] mt-10 bg-[url("./assets/background-8.jpg")] bg-white text-black bg-cover bg-center bg-no-repeat' />
+          <div className='flex clip-up py-20 min-h-[250px] mt-10 bg-[url("./assets/background-8.jpg")] bg-white text-black bg-cover bg-center bg-no-repeat' />
         </div>
 
         {/* Footer */}
